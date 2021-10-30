@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "visualisation/1.0.0": {
+        "dependencies": {
+          "laba2": "1.0.0"
+        },
+        "runtime": {
+          "visualisation.dll": {}
+        }
+      },
+      "laba2/1.0.0": {
+        "runtime": {
+          "laba2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "visualisation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "laba2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

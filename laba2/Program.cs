@@ -23,8 +23,8 @@ namespace laba2
                 
                 //AddDataAndReadAllExample(fl);
                 //ReadAllDataExample(fl);
-                GetOneLineExample(fl);
-                //AddDataReadAndDeleteExample(fl);
+                //GetOneLineExample(fl);
+                AddDataReadAndDeleteExample(fl);
             }
         }
 

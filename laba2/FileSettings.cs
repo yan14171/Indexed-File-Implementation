@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba2
 {
-    struct FileSettings
+    public struct FileSettings
     {
         public byte LZ, LK, KZ, LB;
     }

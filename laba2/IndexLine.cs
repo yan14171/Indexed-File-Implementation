@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba2
 {
-    class IndexLine
+    public class IndexLine
     {
         public IndexLine(byte[] key, int lineNum)
         {
@@ -42,7 +42,10 @@ namespace laba2
         }
 
         public int LineNum { get { return _lineNum; }  private set { _lineNum = value; } }
-
+        public override string ToString()
+        {
+            return $"Key: {Key[0]} - {Key[2]} \t Line number: {LineNum}";
+        }
         public byte[] ToBytes()
         {
             return key.ToList().Concat(BitConverter.GetBytes(_lineNum)).ToArray();

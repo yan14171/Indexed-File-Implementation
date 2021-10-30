@@ -6,7 +6,7 @@ using System.Text;
 
 namespace laba2
 {
-    internal class LABFile : IDisposable
+    public class LABFile : IDisposable
     {
         public LABFile()
         {
@@ -137,6 +137,27 @@ namespace laba2
             }
         }
 
+        public IEnumerable<IndexLine> GetAllIndexLines()
+        {
+            _mainStr.Seek(indexStart, SeekOrigin.Begin);
+
+            byte[] crnt = new byte[4];
+            byte lineCount = 0;
+            byte maxLineCount = (byte)(meta[3] / (meta[1] + 1));
+
+            while(_mainStr.Position < mainStart)
+            {
+                lineCount = (byte)_mainStr.ReadByte();
+                for (int i = 0; i < lineCount; i++)
+                {
+                    _mainStr.Read(crnt);
+                    if (crnt[1] == 45)
+                    yield return new IndexLine(crnt);
+                }
+                _mainStr.Seek(maxLineCount - lineCount, SeekOrigin.Current);   
+            }
+        }
+
         public bool AddLine(Line value)
         {
             var indexLine = new IndexLine(value.Key, value.cntCur);
@@ -147,6 +168,9 @@ namespace laba2
         public bool DeleteLine(byte[] key)
         {
             var mainIndex = DeleteIndex(key);
+
+            if (mainIndex == -1)
+                return false;
 
             DeleteMain(mainIndex);
 
@@ -159,15 +183,7 @@ namespace laba2
 
             _mainStr.Read(bts);
 
-            string result = "";
-
-            foreach (var item in bts)
-            {
-                result += item.ToString();
-                result += " ";
-            }
-
-            return result;
+            return Encoding.UTF8.GetString(bts);
         }
 
         public void Dispose()
@@ -276,7 +292,7 @@ namespace laba2
                 (new IndexLine(key.Concat(new byte[] { 255 })
                                     .ToArray()), new IndexLineComparer());
 
-            if (index < 0) throw new ArgumentException("Such line couldn't be found");
+            if (index < 0) return -1;
 
             var deletedLineNumber = lines[index].LineNum;
 

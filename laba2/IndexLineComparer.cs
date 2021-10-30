@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba2
 {
-    class IndexLineComparer : IComparer<IndexLine>
+    public class IndexLineComparer : IComparer<IndexLine>
     {
         public int Compare(IndexLine x, IndexLine y)
         {

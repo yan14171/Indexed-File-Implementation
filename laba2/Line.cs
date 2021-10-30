@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba2
 {
-    class Line
+    public class Line
     {
         static int cnt = 0;
 
@@ -24,7 +24,7 @@ namespace laba2
 
             cntCur = Line.cnt++;
 
-            Data = Encoding.UTF8.GetBytes(word);
+            Data = Encoding.UTF8.GetBytes(word,0,2);
 
             Key = keyGen();
         }
@@ -88,7 +88,7 @@ namespace laba2
 
         public override string ToString()
         {
-           return $"{BitConverter.ToString(Key)} {BitConverter.ToString(Data)} |";
+            return $"Key: {Key[0]} - {Key[2]} \t Data: {Encoding.UTF8.GetString(Data)}";
         }
 
         public byte[] ToBytes()
