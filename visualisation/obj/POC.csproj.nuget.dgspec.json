@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\visualisation.csproj": {}
+    "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\POC.csproj": {}
   },
   "projects": {
-    "Y:\\stuff\\projects\\Indexed-File-Implementation\\laba2\\laba2.csproj": {
+    "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\IndexedFile.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\stuff\\projects\\Indexed-File-Implementation\\laba2\\laba2.csproj",
-        "projectName": "laba2",
-        "projectPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\laba2\\laba2.csproj",
+        "projectUniqueName": "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\IndexedFile.csproj",
+        "projectName": "IndexedFile",
+        "projectPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\IndexedFile.csproj",
         "packagesPath": "C:\\Users\\IEnumerator\\.nuget\\packages\\",
-        "outputPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\laba2\\obj\\",
+        "outputPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IEnumerator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -77,12 +77,12 @@
         }
       }
     },
-    "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\visualisation.csproj": {
+    "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\POC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\visualisation.csproj",
-        "projectName": "visualisation",
-        "projectPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\visualisation.csproj",
+        "projectUniqueName": "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\POC.csproj",
+        "projectName": "POC",
+        "projectPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\POC.csproj",
         "packagesPath": "C:\\Users\\IEnumerator\\.nuget\\packages\\",
         "outputPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\obj\\",
         "projectStyle": "PackageReference",
@@ -101,8 +101,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "Y:\\stuff\\projects\\Indexed-File-Implementation\\laba2\\laba2.csproj": {
-                "projectPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\laba2\\laba2.csproj"
+              "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\IndexedFile.csproj": {
+                "projectPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\IndexedFile.csproj"
               }
             }
           }

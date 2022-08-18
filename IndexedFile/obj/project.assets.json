@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {
-      "IndexedFile/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/IndexedFile.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/IndexedFile.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "IndexedFile/1.0.0": {
-      "type": "project",
-      "path": "../IndexedFile/IndexedFile.csproj",
-      "msbuildProject": "../IndexedFile/IndexedFile.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": [
-      "IndexedFile >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\IEnumerator\\.nuget\\packages\\": {}
@@ -32,31 +13,27 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\POC.csproj",
-      "projectName": "POC",
-      "projectPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\POC.csproj",
+      "projectUniqueName": "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\IndexedFile.csproj",
+      "projectName": "IndexedFile",
+      "projectPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\IndexedFile.csproj",
       "packagesPath": "C:\\Users\\IEnumerator\\.nuget\\packages\\",
-      "outputPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\visualisation\\obj\\",
+      "outputPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IEnumerator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
-          "projectReferences": {
-            "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\IndexedFile.csproj": {
-              "projectPath": "Y:\\stuff\\projects\\Indexed-File-Implementation\\IndexedFile\\IndexedFile.csproj"
-            }
-          }
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -66,8 +43,8 @@
       }
     },
     "frameworks": {
-      "net5.0-windows7.0": {
-        "targetAlias": "net5.0-windows",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "imports": [
           "net461",
           "net462",
@@ -100,9 +77,6 @@
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
-          },
-          "Microsoft.WindowsDesktop.App.WindowsForms": {
-            "privateAssets": "none"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
